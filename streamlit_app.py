@@ -19,6 +19,6 @@ hi
 st.title('Openings')
 st.sidebar.write('Menu')
 add_selectbox = st.sidebar.selectbox('Choose an opening', ('indian defense', 'modern defense'))
+image = Image.open("https://github.com/KesVisser/streamlit-example/blob/0c6b5805972654c3a725947fd9b69e064fd52ca2/Sicilian%20Defense%20Closed%20-%20untitled%20vs%20titled.png")
 
-
-st.image(/KesVisser/streamlit-example/blob/0c6b5805972654c3a725947fd9b69e064fd52ca2/Sicilian%20Defense%20Closed%20-%20untitled%20vs%20titled.png)
+st.image(image)
