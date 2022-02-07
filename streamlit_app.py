@@ -18,8 +18,8 @@ hi
 """
 st.title('Openings')
 st.sidebar.write('Menu')
-add_selectbox = st.sidebar.selectbox('Choose an opening', ('indian defense', 'modern defense'))
-im = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitled vs titled.png')
+add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'indian defense', 'modern defense', 'Sicilian Defense Closed'))
+im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitled vs titled.png')
 
-if add_selectbox == 'indian defense':
-  st.image(im)
+if add_selectbox == 'Sicilian Defense Closed':
+  st.image(im_sdc_vs)
