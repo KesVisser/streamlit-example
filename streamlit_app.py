@@ -24,6 +24,12 @@ if add_selectbox == 'Sicilian Defense Closed':
   st.title('Openings: Sicilian Defense Closed')
   st.write('Sicilian Defense Closed')
   """
-  hi this is kes
+  We now look at the Sicilian Defense Closed. First we look at the titled players.
+  """
+  """
+  Now we look at the untitled players.
+  """
+  """
+  And now we shall compare the two types of players
   """
   st.image(im_sdc_vs)
