@@ -16,5 +16,5 @@ In the meantime, below is an example of what you can do with just a few lines of
 hi
 """
 st.title('Openings')
-st.sidebar.write('Choose an opening')
-add_selectbox = st.sidebar.selectbox('choose an opening', ('indian defense', 'modern defense'))
+st.sidebar.write('Menu')
+add_selectbox = st.sidebar.selectbox('Choose an opening', ('indian defense', 'modern defense'))
