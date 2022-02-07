@@ -14,7 +14,6 @@ forums](https://discuss.streamlit.io).
 
 In the meantime, below is an example of what you can do with just a few lines of code:
 
-hi
 """
 st.sidebar.write('Menu')
 add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'indian defense', 'modern defense', 'Sicilian Defense Closed'))
