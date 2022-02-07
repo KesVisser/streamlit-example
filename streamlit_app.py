@@ -17,3 +17,4 @@ hi
 """
 st.title('Openings')
 st.sidebar.write('Choose an opening')
+st.sidebar.selectbox('choose an opening', (indian defense, modern defense))
