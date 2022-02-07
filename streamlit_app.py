@@ -21,5 +21,5 @@ st.sidebar.write('Menu')
 add_selectbox = st.sidebar.selectbox('Choose an opening', ('indian defense', 'modern defense'))
 im = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitled vs titled.png')
 
-if add_selectbox = 'indian defense':
+if add_selectbox == 'indian defense':
   st.image(im)
