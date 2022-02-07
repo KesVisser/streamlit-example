@@ -23,5 +23,5 @@ im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitle
 
 if add_selectbox == 'Sicilian Defense Closed':
   st.title('Openings: Sicilian Defense Closed')
-  st.write(Sicilian Defense Closed)
+  st.write('Sicilian Defense Closed')
   st.image(im_sdc_vs)
