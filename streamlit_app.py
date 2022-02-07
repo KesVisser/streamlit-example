@@ -17,4 +17,4 @@ hi
 """
 st.title('Openings')
 st.sidebar.write('Choose an opening')
-add_selectbox = st.sidebar.selectbox('choose an opening', ('indian defense', 'modern defense')
+add_selectbox = st.sidebar.selectbox('choose an opening', ('indian defense', 'modern defense'))
