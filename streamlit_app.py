@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 """
-# Openings!
+# Chess
 
 Edit `/streamlit_app.py` to customize this app to your heart's desire
 
@@ -16,7 +16,6 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 hi
 """
-st.title('Openings')
 st.sidebar.write('Menu')
 add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'indian defense', 'modern defense', 'Sicilian Defense Closed'))
 im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitled vs titled.png')
@@ -24,4 +23,7 @@ im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitle
 if add_selectbox == 'Sicilian Defense Closed':
   st.title('Openings: Sicilian Defense Closed')
   st.write('Sicilian Defense Closed')
+  """
+  hi this is kes
+  """
   st.image(im_sdc_vs)
