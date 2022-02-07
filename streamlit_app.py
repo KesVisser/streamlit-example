@@ -18,3 +18,5 @@ hi
 st.title('Openings')
 st.sidebar.write('Menu')
 add_selectbox = st.sidebar.selectbox('Choose an opening', ('indian defense', 'modern defense'))
+
+st.image('Sicilian Defense Closed - untitled vs titled.pgn')
