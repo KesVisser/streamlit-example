@@ -33,8 +33,6 @@ im_sdc_u_a = "hi"
 im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitled vs titled.png')
 im_pd_t = Image.open('/app/streamlit-example/Pirc Defense - titled.png')
 im_pd_t_a = Image.open('/app/streamlit-example/Pirc Defense - titled - average.png')
-im_pd_u = "hi"
-im_pd_u_a = "hi"
   
 if add_selectbox == 'Indian Defense':
   st.title('Openings: Indian Defense')
