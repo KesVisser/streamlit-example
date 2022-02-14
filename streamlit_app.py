@@ -16,23 +16,43 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 """
 st.sidebar.write('Menu')
-add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', ))
+add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', 'Scandinavian Defense: Mieses-Kotroc Variation', 'Caro-Kann Defense', 'Horwitz Defense', 'Top 5 - titled', 'Top 5 - untitled'))
 im_id_t = Image.open('/app/streamlit-example/Indian Defense - titled.png') 
 im_id_t_a = Image.open('/app/streamlit-example/Indian Defense - titled - average.png')
-im_id_u = "hi"
-im_id_u_a = "hi"
-im_id_vs = "hi"
+im_id_u = Image.open('/app/streamlit-example/Indian Defense - untitled.png') 
+im_id_u_a = Image.open('/app/streamlit-example/Indian Defense - untitled - average.png') 
+im_id_vs = Image.open('/app/streamlit-example/Indian Defense - titled vs untitled.png')
 im_md_t = Image.open('/app/streamlit-example/Modern Defense - titled.png')
 im_md_t_a = Image.open('/app/streamlit-example/Modern Defense - titled - average.png')
 im_kia_t = Image.open("/app/streamlit-example/King's Indian Attack - titled.png")
 im_kia_t_a = Image.open("/app/streamlit-example/King's Indian Attack - titled - average.png")
 im_sdc_t = Image.open("/app/streamlit-example/Sicilian Defense Closed - titled.png")
-im_sdc_t_a = Image.open("/app/streamlit-example/Sicilian Defense Closed - titled - average.png")
-im_sdc_u = "hi"
-im_sdc_u_a = "hi" 
-im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - untitled vs titled.png')
+im_sdc_t_a = Image.open("/app/streamlit-example/Sicilian Defense Closed - titled - average.png") 
+im_sdc_u = Image.open("/app/streamlit-example/Sicilian Defense Closed - untitled.png")
+im_sdc_u_a = Image.open("/app/streamlit-example/Sicilian Defense Closed - untitled - average.png")
+im_sdc_vs = Image.open('/app/streamlit-example/Sicilian Defense Closed - titled vs untitled.png')
 im_pd_t = Image.open('/app/streamlit-example/Pirc Defense - titled.png')
-im_pd_t_a = Image.open('/app/streamlit-example/Pirc Defense - titled - average.png')
+im_pd_t_a = Image.open('/app/streamlit-example/Pirc Defense - titled - average.png') 
+im_sdm_u = Image.open('/app/streamlit-example/Scandinavian Defense Mieses-Kotroc Variation - untitled.png')
+im_sdm_u_a = Image.open('/app/streamlit-example/Scandinavian Defense Mieses-Kotroc Variation - untitled -average.png')
+im_ckd_u = Image.open('/app/streamlit-example/Caro-Kann Defense - untitled.png') 
+im_ckd_u_a = Image.open('/app/streamlit-example/Caro-Kann Defense - untitled - average.png')
+im_hd_u = Image.open('/app/streamlit-example/Horwitz Defense - untitled.png')
+im_hd_u_a = Image.open('/app/streamlit-example/Horwitz Defense - untitled - average.png') 
+im_titled_a = Image.open('/app/streamlit-example/Titled - average.png')
+im_untitled_a = Image.open('/app/streamlit-example/Untitled - average.png')
+
+if add_selectbox == 'General':
+  
+if add_selectbox == 'Top 5 - titled':
+  st.title('Top 5 openings titled')
+  
+  st.image(im_titled_a)
+  
+if add_selectbox == 'Top 5 - untitled':
+  st.title('Top 5 openings untitled')
+  
+  st.image(im_untitled_a)
   
 if add_selectbox == 'Indian Defense':
   st.title('Openings: Indian Defense')
@@ -43,6 +63,11 @@ if add_selectbox == 'Indian Defense':
   """
   st.image(im_id_t)
   st.image(im_id_t_a)
+  """
+  Now we look at the untitled players. The Indian Defense is played 17 times by titled players, and the longest sicilian defense defense game is a 129 moves.
+  """
+  st.image(im_id_u)
+  st.image(im_id_u_a) 
   
 if add_selectbox == 'Modern Defense':
   st.title('Openings: Modern Defense')
@@ -72,8 +97,10 @@ if add_selectbox == 'Sicilian Defense Closed':
   st.image(im_sdc_t)
   st.image(im_sdc_t_a)
   """
-  Now we look at the untitled players.
+  Now we look at the untitled players. The Sicilian Defense Closed is played 19 times by titled players, and the longest sicilian defense defense game is a 114 moves.
   """
+  st.image(im_sdc_u)
+  st.image(im_sdc_u_a)
   """
   And now we shall compare the two types of players
   """
@@ -88,4 +115,30 @@ if add_selectbox == "Pirc Defense":
   st.image(im_pd_t)
   st.image(im_pd_t_a)
   
+if add_selctbox == "Scandinavian Defense: Mieses-Kotroc Variation":
+  st.title("Openings: Scandinavian Defense: Mieses-Kotroc Variation")
+  """
+  The Scandinavian Defense: Mieses-Kotroc Variation is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
+  The Scandinavian Defense: Mieses-Kotroc Variation is played - times by untitled players, and the longest Scandinavian Defense: Mieses-Kotroc Variation game is 144 moves.
+  """
+  st.image(im_sdm_u)
+  st.image(im_sdm_u_a)
+
+if add_selctbox == 'Caro-Kann Defense':
+  st.title("Openings: Caro-Kann Defense")
+  """
+  The Caro-Kann Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
+  The Caro-Kann Defense is played 21 times by untitled players, and the longest Caro-Kann Defense game is 124 moves.
+  """
+  st.image(im_ckd_u)
+  st.image(im_ckd_u_a)
+  
+if add_selctbox == 'Horwitz Defense':
+  st.title("Openings: Horwitz Defense")
+  """
+  The Horwitz Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
+  The Horwitz Defense is played 14 times by untitled players, and the longest Horwitz Defense game is 127 moves.
+  """
+  st.image(im_hd_u)
+  st.image(im_hd_u_a)  
   
