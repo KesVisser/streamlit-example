@@ -123,7 +123,7 @@ if add_selectbox == "Pirc Defense":
   st.image(im_pd_t)
   st.image(im_pd_t_a)
   
-if add_selctbox == 'Scandinavian Defense Mieses Kotroc Variation':
+if add_selectbox == 'Scandinavian Defense Mieses Kotroc Variation':
   st.title("Openings: Scandinavian Defense: Mieses-Kotroc Variation")
   """
   The Scandinavian Defense: Mieses-Kotroc Variation is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
@@ -132,7 +132,7 @@ if add_selctbox == 'Scandinavian Defense Mieses Kotroc Variation':
   st.image(im_sdm_u)
   st.image(im_sdm_u_a)
 
-if add_selctbox == 'Caro-Kann Defense':
+if add_selectbox == 'Caro-Kann Defense':
   st.title("Openings: Caro-Kann Defense")
   """
   The Caro-Kann Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
@@ -141,7 +141,7 @@ if add_selctbox == 'Caro-Kann Defense':
   st.image(im_ckd_u)
   st.image(im_ckd_u_a)
   
-if add_selctbox == 'Horwitz Defense':
+if add_selectbox == 'Horwitz Defense':
   st.title("Openings: Horwitz Defense")
   """
   The Horwitz Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
