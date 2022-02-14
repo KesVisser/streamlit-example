@@ -68,7 +68,7 @@ if add_selectbox == 'Top 5 - titled':
   """  
   st.image(im_titled_a)
   """
-  As you can see.
+  As you can see the pirc game goes up first and then returns to the mean, to later go into the negative.
   """
   
 if add_selectbox == 'Top 5 - untitled':
