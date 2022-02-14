@@ -45,7 +45,16 @@ im_untitled_a = Image.open('/app/streamlit-example/Untitled - average.png')
 if add_selectbox == 'General':
   st.title('General')
   """
-  Text
+  Chess is one of the most popular boardgames in the world and has reseantly become even more popular throught the tv show 'The Queens Gambit'. 
+  We also became intrested in this topic so when we had to chose a topic for our research we chose chess.
+  
+  Everybody in the world is able to play chess, but of course some people are good at it and others not so much. Some people are even given official chess titles, such as Grand Master.
+  We thought it would be fun to look at people who play chess and have a titled versus normal chess players like you and me, those without a title. Now we had to get some data.
+  We used data from the popular chess website called lichess. On this website there are so called tournaments. They have tournaments in which everyone can enter and tournaments where only people with a title can enter.
+  Thus we chose to get all the games from a tournament played by normal players and all the games from the bullet titled arenea, both of these tournaments were from jan 2022.
+  
+  A chess game consist of an opening, a mid game and an end game. In our research we decided to narrow our analyses down to the openings in chess, but there are over a 1000 named opening and variations in chess.   
+  Thus we decide to look at the openings which were most popular in our databases. We chose to look at the 5 most played openings in our titled players games data base and at the 5 most played openings in our untitled players games datat base.
   """
   
 if add_selectbox == 'Top 5 - titled':
