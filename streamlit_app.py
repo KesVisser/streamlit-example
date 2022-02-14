@@ -16,7 +16,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 """
 st.sidebar.write('Menu')
-add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', 'Scandinavian Defense Mieses Kotroc Variation', 'Caro-Kann Defense', 'Horwitz Defense', 'Top 5 - titled', 'Top 5 - untitled'))
+add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Top 5 - titled', 'Top 5 - untitled', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', 'Scandinavian Defense Mieses Kotroc Variation', 'Caro-Kann Defense', 'Horwitz Defense'))
 im_id_t = Image.open('/app/streamlit-example/Indian Defense - titled.png') 
 im_id_t_a = Image.open('/app/streamlit-example/Indian Defense - titled - average.png')
 im_id_u = Image.open('/app/streamlit-example/Indian Defense - untitled.png') 
