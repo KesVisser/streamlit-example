@@ -55,13 +55,17 @@ if add_selectbox == 'General':
   
   A chess game consist of an opening, a mid game and an end game. In our research we decided to narrow our analyses down to the openings in chess, but there are over a 1000 named opening and variations in chess.   
   Thus we decide to look at the openings which were most popular in our databases. We chose to look at the 5 most played openings in our titled players games data base and at the 5 most played openings in our untitled players games datat base.
+  
+  In all the grapths that are shown you will find the number of moves on the x-axis and the evals on the y-axis. The evals are number calculated by a computer, that is supposed to represent who has a higher change of winning.
+  If the eval is positive then white has a higher change at winning, but if it is a negative value then black is more likely to win. These numbers can change a lot during the games, so it can go from negative to positve and back.
+  Every game start with an eval of 0 since black and white are equally likely to win at the start of a game.
   """
   
 if add_selectbox == 'Top 5 - titled':
   st.title('Top 5 openings titled')
   """
-  Within our titled player data base we found 1076 different openings and variations. The 5 most common ones were th Indian Defense, the Modern Defense, the King's Indian Attack, the Sicilian Defense Closed and the Pirc Defense.
-  The Indian Defense was played 128 times (12%). The Modern Defense was played 119 times (11%). The King's Indian Attack was played 89 times (8%). The Sicilian Defense Closed was played 82 times(8%) and the Pirc Defense was played 78 times(7%).
+  Within our titled player data base we found 1076 different openings and variations. The 5 most common ones were the Indian Defense, the Modern Defense, the King's Indian Attack, the Sicilian Defense Closed and the Pirc Defense.
+  The Indian Defense was played 128 times (1.9%) The Modern Defense was played 119 times (1.8%). The King's Indian Attack was played 89 times (1.4%). The Sicilian Defense Closed was played 82 times (1.2%) and the Pirc Defense was played 78 times (1.2%).
   
   In the graph below you can see the graph of all the average games of the top 5 openings of the titled players. The graph is cut of at the 100th move since not all games are of the same length so this way the end of the graph which might be made up of 2 games is not visible.
   You can see more detailed graphs of the different opening on their own page.
@@ -78,9 +82,22 @@ if add_selectbox == 'Top 5 - titled':
 if add_selectbox == 'Top 5 - untitled':
   st.title('Top 5 openings untitled')
   """
-  Text
+  Within our untitled player data base we found 478 different openings and variations. The 5 most common ones were the Scandinavian Defense Mieses Kotroc Variation, the Caro-Kann Defense, the Sicilian Defense Closed, the Indian Defense and the Horwitz Defense.
+  The Scandinavian Defense Mieses Kotroc Variation was played 21 times (2%). The Caro-Kann Defense was played 21 times (2%). The Sicilian Defense Closed was played 19 times (1.8%). The Indian Defense was played 17 times (1.6%). The Horwitz Defense was played 14 times (1.4%).
+  So it seems that the two most popular openings for titled and untitled players are played almost as often, but there are small diferences in how often other 3 are choosen.
+  
+  In the graph below you can see the graph of all the average games of the top 5 openings of the untitled players. The graph is cut of at the 75th move since not all games are of the same length so this way the end of the graph which might be made up of 2 games is not visible.
+  You can see more detailed graphs of the different opening on their own page.
   """  
   st.image(im_untitled_a)
+  """
+  As you can see unlike with the titled players the untitled players have an opening that moves away from the mean of 0 very quickly. This is the Scandinavian Defense Mieses Kotroc Variation. It almost instantly has an postive eval,
+  this seems to suggest that this opening is very favorable for white. The other lines seem to stay around the zero line until at least the 10th move. After this we can also see the Horwitz Defense go away from the zero line and join the Scandinavian Defense line in the positive.
+  We can also see that the Sililian Defence moves away from the zero line after about the 25th move, and becomes negative. Thus favoring the black player.
+  
+  As you can see these lines are much less steady then the lines of the titled players. This could be because the titled players have a better insight into the game and can thus both control the opening so that neither has a bigger change at winning.
+  But it could also be that we have more games to make up the average in titled players than the untitled players and that that is what makes the lines of the titled players smoother.
+  """
   
 if add_selectbox == 'Indian Defense':
   st.title('Openings: Indian Defense')
