@@ -61,9 +61,15 @@ if add_selectbox == 'Top 5 - titled':
   st.title('Top 5 openings titled')
   """
   Within our titled player data base we found 1076 different openings and variations. The 5 most common ones were th Indian Defense, the Modern Defense, the King's Indian Attack, the Sicilian Defense Closed and the Pirc Defense.
-  The Indian Defense was played 128 times (12%). The Modern Defense was played 119 times (11%). The King's Indian Attack was played 89 times (8%). The Sicilian Defense Closed was played 82 times(8%) and the Pirc Defense was played 78 times(7%)
+  The Indian Defense was played 128 times (12%). The Modern Defense was played 119 times (11%). The King's Indian Attack was played 89 times (8%). The Sicilian Defense Closed was played 82 times(8%) and the Pirc Defense was played 78 times(7%).
+  
+  In the graph below you can see the graph of all the average games of the top 5 openings of the titled players. The graph is cut of at the 100th move since not all games are of the same length so this way the end of the graph which might be made up of 2 games is not visible.
+  You can see more detailed graphs of the different opening on their own page.
   """  
   st.image(im_titled_a)
+  """
+  As you can see.
+  """
   
 if add_selectbox == 'Top 5 - untitled':
   st.title('Top 5 openings untitled')
