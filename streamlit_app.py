@@ -16,7 +16,7 @@ In the meantime, below is an example of what you can do with just a few lines of
 
 """
 st.sidebar.write('Menu')
-add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', 'Scandinavian Defense Mieses-Kotroc Variation', 'Caro-Kann Defense', 'Horwitz Defense', 'Top 5 - titled', 'Top 5 - untitled'))
+add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', 'Scandinavian Defense Mieses Kotroc Variation', 'Caro-Kann Defense', 'Horwitz Defense', 'Top 5 - titled', 'Top 5 - untitled'))
 im_id_t = Image.open('/app/streamlit-example/Indian Defense - titled.png') 
 im_id_t_a = Image.open('/app/streamlit-example/Indian Defense - titled - average.png')
 im_id_u = Image.open('/app/streamlit-example/Indian Defense - untitled.png') 
@@ -123,7 +123,7 @@ if add_selectbox == "Pirc Defense":
   st.image(im_pd_t)
   st.image(im_pd_t_a)
   
-if add_selctbox == 'Scandinavian Defense Mieses-Kotroc Variation':
+if add_selctbox == 'Scandinavian Defense Mieses Kotroc Variation':
   st.title("Openings: Scandinavian Defense: Mieses-Kotroc Variation")
   """
   The Scandinavian Defense: Mieses-Kotroc Variation is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
