@@ -92,6 +92,7 @@ if add_selectbox == 'Indian Defense':
   """
   st.image(im_id_u)
   st.image(im_id_u_a) 
+  st.image(im_id_vs)
   
 if add_selectbox == 'Modern Defense':
   st.title('Openings: Modern Defense')
