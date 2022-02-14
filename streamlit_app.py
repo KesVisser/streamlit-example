@@ -43,15 +43,23 @@ im_titled_a = Image.open('/app/streamlit-example/Titled - average.png')
 im_untitled_a = Image.open('/app/streamlit-example/Untitled - average.png')
 
 if add_selectbox == 'General':
+  st.title('General')
+  """
+  Text
+  """
   
 if add_selectbox == 'Top 5 - titled':
   st.title('Top 5 openings titled')
-  
+  """
+  Text
+  """  
   st.image(im_titled_a)
   
 if add_selectbox == 'Top 5 - untitled':
   st.title('Top 5 openings untitled')
-  
+  """
+  Text
+  """  
   st.image(im_untitled_a)
   
 if add_selectbox == 'Indian Defense':
