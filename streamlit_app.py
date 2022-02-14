@@ -105,15 +105,40 @@ if add_selectbox == 'Indian Defense':
   The Indian Defense is in the top 5 of untitled players and in the top 5 of titled players. We are first going to have a look at titled players, then at untitled players. 
   And then we end with a comparison of the 2 types of players.
   The Indian Defense is played 128 times by titled players, and the longest indian defense game is a 160 moves.
+  
+  Below you can see all the 128 games of the Indian Defense by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_id_t)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  """
   st.image(im_id_t_a)
   """
+  From the graph we can see that the average indian defense game played by titled players stays around the zero line for quite a long time. Although it does seem like the evals are slightly positive in the beginning, and thus favour the white player.
+  Somewhere between the 50th move and the 75th move we can however see that the average game starts to favour the black player.
+
   Now we look at the untitled players. The Indian Defense is played 17 times by titled players, and the longest sicilian defense defense game is a 129 moves.
+  Below you can see all the 17 games of the Indian Defense by untitled players,but again these are still fare to many lines to analyse with our eyes. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_id_u)
-  st.image(im_id_u_a) 
+  """
+  We ofcourse still have the same probablem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyze them past the 50th move.
+  """
+  st.image(im_id_u_a)
+  """
+  From the graph we can see that the average indian defense game played by untitled players stays around the zero line at the beginning with a slight trend downwards, thus favouring the black player.
+  
+  Now that we have looked at these lines individually we will now compare them. 
+  But before we look at the actual lines it seems intreseting to note that the longest titled player game went on for about 30 moves longer then the longest untitled player game, with respect to the indian defense.
+  """
   st.image(im_id_vs)
+  
+  """
+  As you can see the line of the titled players stays closer to the zero line whereas the untitled player line is slightly lower. This suggests that the indian defense has a slight advantage for the black player if you are not playing with a very advanced white player.
+  Because if the white player is very good then this player can still make it so that nobody has a real advantage.
+  We can also see that the titled players games are much more steady then that of the untitled players.
+  """
   
 if add_selectbox == 'Modern Defense':
   st.title('Openings: Modern Defense')
