@@ -51,17 +51,17 @@ if add_selectbox == 'General':
   st.title('General')
   """  
   Chess is one of the most popular boardgames in the world and has recently become even more popular through the tv show 'The Queens Gambit'. 
-  We also became interested in this topic so when we had to chose a topic for our research we chose chess.
+  We also became interested in this topic, so when we had to chose a topic for our research we chose chess.
   
   Everybody in the world is able to play chess, but of course some people are good at it and others not so much. Some people are even given official chess titles, such as Grand Master.
   We thought it would be fun to look at people who play chess and have a titled versus normal chess players like you and me, those without a title. Now we had to get some data.
   We used data from the popular chess website called lichess. On this website there are so called tournaments. They have tournaments in which everyone can enter and tournaments where only people with a title can enter.
-  Thus we chose to get all the games from a tournament played by normal players and all the games from the bullet titled arena, both of these tournaments were from jan 2022.
+  Thus we chose to get all the games from a bullet tournament played by normal players and all the games from the bullet titled arena, both of these tournaments were from jan 2022 (version of chess that restricst the players time to make a move).
   
   A chess game consist of an opening, a mid game and an end game. In our research we decided to narrow our analyses down to the openings in chess, but there are over a 1000 named opening and variations in chess.   
   Thus we decide to look at the openings which were most popular in our databases. We chose to look at the 5 most played openings in our titled players games data base and at the 5 most played openings in our untitled players games data base.
   
-  In all the graphs that are shown you will find the number of moves on the x-axis and the evals on the y-axis. The evals are number calculated by a computer, that is supposed to represent who has a higher change of winning.
+  In all the graphs that are shown you will find the number of moves on the x-axis and the evals on the y-axis. The evals are numbers calculated by a computer, that is supposed to represent who has a higher change of winning.
   If the eval is positive then white has a higher change at winning, but if it is a negative value then black is more likely to win. These numbers can change a lot during the games, so it can go from negative to positive and back.
   Every game start with an eval of 0 since black and white are equally likely to win at the start of a game.
   """
@@ -73,37 +73,35 @@ if add_selectbox == 'Top 5 - titled':
   The Indian Defense was played 128 times (1.9%) The Modern Defense was played 119 times (1.8%). The King's Indian Attack was played 89 times (1.4%). The Sicilian Defense Closed was played 82 times (1.2%) and the Pirc Defense was played 78 times (1.2%).
   
   In the graph below you can see the graph of all the average games of the top 5 openings of the titled players. The graph is cut of at the 100th move since not all games are of the same length so this way the end of the graph which might be made up of 2 games is not visible.
-  You can see more detailed graphs of the different opening on their own page.
+  We don't want it to be visible because an average made up of say 2 games is not an average that is of interest to us. You can see more detailed graphs of the different opening on their own page.
   """  
   st.image(im_titled_a)
   """ 
-  As you can see all the lines stay very close to the mean of 0 at the beginning. Except around the 5th move where both the Pirc Defense and the modern Defense make a small and short jump into the positive.
-  This suggests that the white players has an opportunity there, but almost always loses it.
+  As you can see all the lines stay very close to the zero at the beginning. Except around the 5th move where both the Pirc Defense and the Modern Defense make a small and short jump into the positive.
+  This suggests that the white players has an opportunity there, but almost always loses this opportunity.
   All the lines stay very close to 0 at the beginning but seem to all be positive until around the 22th move when the Pirc Defense goes deeply into the negative. This seems to suggest that all the favourite openings slightly favour white a little bit.
   Which makes sense since white plays the first move and therefore naturally has a small advantage.
-  It also seems to me that the green line, thus the Indian Defense stays closed to the mean, this might suggest that it allows for a very equal setting that continuous for the rest of the game and might explain why it is the all time favourite.
+  It also seems to me that the green line, thus the Indian Defense stays closest to the zero line, this might suggest that it allows for a very equal setting that continuous for the rest of the game and might explain why it is the all time favourite.
   """
   
 if add_selectbox == 'Top 5 - untitled':
   st.title('Top 5 openings untitled')
   """ 
-  Within our untitled player data base we found 478 different openings and variations. The 5 most common ones were the Scandinavian Defense Mieses Kotroc Variation, the Caro-Kann Defense, the Sicilian Defense Closed, the Indian Defense and the Horwitz Defense.
+  Within our untitled player data base we found 478 different openings and variations, so quite a lot less then in the titled player data base. The 5 most common ones were the Scandinavian Defense Mieses Kotroc Variation, the Caro-Kann Defense, the Sicilian Defense Closed, the Indian Defense and the Horwitz Defense.
   The Scandinavian Defense Mieses Kotroc Variation was played 21 times (2%). The Caro-Kann Defense was played 21 times (2%). The Sicilian Defense Closed was played 19 times (1.8%). The Indian Defense was played 17 times (1.6%). The Horwitz Defense was played 14 times (1.4%).
   So it seems that the two most popular openings for titled and untitled players are played almost as often, but there are small differences in how often other 3 are chosen.
   
   In the graph below you can see the graph of all the average games of the top 5 openings of the untitled players. The graph is cut of at the 75th move since not all games are of the same length so this way the end of the graph which might be made up of 2 games is not visible.
   You can see more detailed graphs of the different opening on their own page.
-
   """  
   st.image(im_untitled_a)
   """ 
   As you can see unlike with the titled players the untitled players have an opening that moves away from the mean of 0 very quickly. This is the Scandinavian Defense Mieses Kotroc Variation. It almost instantly has a positive eval,
-  this seems to suggest that this opening is very favourable for white. The other lines seem to stay around the zero line until at least the 10th move. After this we can also see the Horwitz Defense go away from the zero line and join the Scandinavian Defense line in the positive.
-  We can also see that the Sicilians Defence moves away from the zero line after about the 25th move and becomes negative. Thus, favouring the black player.
+  this seems to suggest that this opening is very favourable for white. The other lines seem to stay around the zero line until at least the 10th move. After this we can see the Horwitz Defense go away from the zero line and join the Scandinavian Defense line in the positive.
+  We can also see that the Sicilians Defence Closed moves away from the zero line after about the 25th move and becomes negative. Thus, favouring the black player.
   
   As you can see these lines are much less steady than the lines of the titled players. This could be because the titled players have a better insight into the game and can thus both control the opening so that neither has a bigger change at winning.
   But it could also be that we have more games to make up the average in titled players than the untitled players and that that is what makes the lines of the titled players smoother.
-
   """
   
 if add_selectbox == 'Indian Defense':
@@ -114,7 +112,6 @@ if add_selectbox == 'Indian Defense':
   The Indian Defense is played 128 times by titled players, and the longest Indian Defense game is 160 moves.
   
   Below you can see all the 128 games of the Indian Defense by the titled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the titled players.
-
   """
   st.image(im_id_t)
   """  
@@ -142,10 +139,10 @@ if add_selectbox == 'Indian Defense':
   """
   st.image(im_id_vs)
   """  
-  As you can see the line of the titled players stays closer to the zero line whereas the untitled player line is slightly lower. This suggests that the Indian Defense has a slight advantage for the black player if you are not playing with a very advanced white player.
+  In the graph you can see that the titled players and the untitled players have almost the same evals for the first 10 moves. This is probably due to the fact that they have the same opening.
+  You can also see the line of the titled players stays closer to the zero line whereas the untitled player line is slightly lower. This suggests that the Indian Defense has a slight advantage for the black player if you are not playing with a very advanced white player.
   Because if the white player is very good then this player can still make it so that nobody has a real advantage.
-  We can also see that the titled players games are much steadier then that of the untitled players.
-
+  We can also see that the titled players games are much steadier than that of the untitled players.
   """
   
 if add_selectbox == 'Modern Defense':
@@ -155,7 +152,6 @@ if add_selectbox == 'Modern Defense':
   The Modern Defense is played 119 times by titled players, and the longest Modern Defense game is 228 moves.
   
   Below you can see all the 119 games of the Modern Defense by the titled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the titled players.
-
   """
   st.image(im_md_t)
   """
