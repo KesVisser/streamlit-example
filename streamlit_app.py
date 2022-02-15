@@ -38,8 +38,7 @@ im_untitled_a = Image.open('/app/streamlit-example/Untitled - average.png')
 if add_selectbox != 'General':
   """
   In all the graphs that are shown you will find the number of moves on the x-axis and the evals on the y-axis. The evals are numbers calculated by a computer, that is supposed to represent who has a higher change of winning.
-  If the eval is positive then white has a higher change at winning, but if it is a negative value then black is more likely to win. These numbers can change a lot during the games, so it can go from negative to positive and back.
-  Every game start with an eval of 0 since black and white are equally likely to win at the start of a game.
+  If the eval is positive then white has a higher change at winning, but if it is a negative value then black is more likely to win. You can read a little bit more about this under General.
   """
 
 if add_selectbox == 'General':
