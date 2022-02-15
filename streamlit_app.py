@@ -149,7 +149,7 @@ if add_selectbox == 'Modern Defense':
   """
   st.image(im_md_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 119 games, thus it is not telling us much about the average modern defense game.
   Therefore we will not analyze the end of this line but only up to around the 100th move.
   """
   st.image(im_md_t_a)
@@ -167,7 +167,7 @@ if add_selectbox == "King's Indian Attack":
   """
   st.image(im_kia_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 89 games, thus it is not telling us much about the average king's indian attack game.
   Therefore we will not analyze the end of this line but only up to around the 100th move.
   """
   st.image(im_kia_t_a)
@@ -186,7 +186,7 @@ if add_selectbox == 'Sicilian Defense Closed':
   """
   st.image(im_sdc_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 82 games, thus it is not telling us much about the average Sicilian Defense Closed game.
   Therefore we will not analyze the end of this line but only up to around the 100th move.
   """
   st.image(im_sdc_t_a)
@@ -225,12 +225,12 @@ if add_selectbox == "Pirc Defense":
   """
   st.image(im_pd_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 78 games, thus it is not telling us much about the average pirc defense game.
   Therefore we will not analyze the end of this line but only up to around the 75th move.
   """
   st.image(im_pd_t_a)
   """
-  In the graph of the average titled pirc defense game 
+  In the graph of the average titled pirc defense game you can see that white has the advantage for about 5 moves since the graph is positive, but that after this it starts to go down and into the negative around the 25th move.
   """
   
 if add_selectbox == 'Scandinavian Defense Mieses Kotroc Variation':
@@ -238,25 +238,53 @@ if add_selectbox == 'Scandinavian Defense Mieses Kotroc Variation':
   """
   The Scandinavian Defense: Mieses-Kotroc Variation is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
   The Scandinavian Defense: Mieses-Kotroc Variation is played - times by untitled players, and the longest Scandinavian Defense: Mieses-Kotroc Variation game is 144 moves.
+  
+  Below you can see all the 21 games of the Scandinavian Defense Mieses Kotroc Variation by the untitled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_sdm_u)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 21 games, thus it is not telling us much about the average Scandinavian Defense Mieses Kotroc Variation game.
+  Therefore we will not analyze the end of this line but only up to around the 50th move.
+  """
   st.image(im_sdm_u_a)
+  """
+  The graph seems to have a positive trend and not really go below the zero line. This seems to suggest that this is a opening that really favors the white player.
+  """
 
 if add_selectbox == 'Caro-Kann Defense':
   st.title("Openings: Caro-Kann Defense")
   """
   The Caro-Kann Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
   The Caro-Kann Defense is played 21 times by untitled players, and the longest Caro-Kann Defense game is 124 moves.
+  
+  Below you can see all the 21 games of the Caro-Kann Defense by the untitled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_ckd_u)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 21 games, thus it is not telling us much about the average Caro-Kann Defense game.
+  Therefore we will not analyze the end of this line but only up to around the 50th move.
+  """  
   st.image(im_ckd_u_a)
+  """
+  The graph seems to have a negative trend and not really go above the zero line. This seems to suggest that this is a opening that really favors the black player.
+  """
   
 if add_selectbox == 'Horwitz Defense':
   st.title("Openings: Horwitz Defense")
   """
   The Horwitz Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
   The Horwitz Defense is played 14 times by untitled players, and the longest Horwitz Defense game is 127 moves.
+  
+  Below you can see all the 14 games of the Caro-Kann Defense by the untitled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_hd_u)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 14 games, thus it is not telling us much about the average Horwitz Defense game.
+  Therefore we will not analyze the end of this line but only up to around the 50th move.
+  """  
   st.image(im_hd_u_a)  
+  """
+  The graph of the average Horwitz Defense seems to stay around the zero line for the first 25 moves, and therefore does not really favor any particular player. 
+  After the 25th move the line does go down into the negative, and thus it seems to favor the black player.
+  """
   
