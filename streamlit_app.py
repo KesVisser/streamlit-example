@@ -6,7 +6,6 @@ from PIL import Image
 
 """
 This article is based on the work of Kami, Pawel and Kes, and writen by Kes.
-
 """
 st.sidebar.write('Menu')
 add_selectbox = st.sidebar.selectbox('Choose an opening', ('General', 'Top 5 - titled', 'Top 5 - untitled', 'Indian Defense', 'Modern Defense', "King's Indian Attack", 'Sicilian Defense Closed', 'Pirc Defense', 'Scandinavian Defense Mieses Kotroc Variation', 'Caro-Kann Defense', 'Horwitz Defense'))
