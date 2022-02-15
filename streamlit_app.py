@@ -42,6 +42,11 @@ im_hd_u_a = Image.open('/app/streamlit-example/Horwitz Defense - untitled - aver
 im_titled_a = Image.open('/app/streamlit-example/Titled - average.png')
 im_untitled_a = Image.open('/app/streamlit-example/Untitled - average.png')
 
+if add_selectbox != 'General':
+  """
+  Text here about some general things.
+  """
+
 if add_selectbox == 'General':
   st.title('General')
   """
