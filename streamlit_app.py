@@ -5,14 +5,7 @@ import streamlit as st
 from PIL import Image
 
 """
-# Chess
-
-Edit `/streamlit_app.py` to customize this app to your heart's desire
-
-If you have any questions, checkout our [documentation](https://docs.streamlit.io) and [community
-forums](https://discuss.streamlit.io).
-
-In the meantime, below is an example of what you can do with just a few lines of code:
+This project is based on the work of Kamiliah, Pawel and Kes, and writen by Kes.
 
 """
 st.sidebar.write('Menu')
@@ -44,7 +37,9 @@ im_untitled_a = Image.open('/app/streamlit-example/Untitled - average.png')
 
 if add_selectbox != 'General':
   """
-  Text here about some general things.
+  In all the graphs that are shown you will find the number of moves on the x-axis and the evals on the y-axis. The evals are numbers calculated by a computer, that is supposed to represent who has a higher change of winning.
+  If the eval is positive then white has a higher change at winning, but if it is a negative value then black is more likely to win. These numbers can change a lot during the games, so it can go from negative to positive and back.
+  Every game start with an eval of 0 since black and white are equally likely to win at the start of a game.
   """
 
 if add_selectbox == 'General':
