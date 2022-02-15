@@ -220,9 +220,18 @@ if add_selectbox == "Pirc Defense":
   """
   The Pirc Defense is only in the top 5 of titled players. Thus we are only going to look at the titled players. 
   The Pirc Defense is played 78 times by titled players, and the longest pirc defense game is 197 moves.
+  
+  Below you can see all the 78 games of the Pirc Defense by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_pd_t)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  Therefore we will not analyze the end of this line but only up to around the 75th move.
+  """
   st.image(im_pd_t_a)
+  """
+  In the graph of the average titled pirc defense game 
+  """
   
 if add_selectbox == 'Scandinavian Defense Mieses Kotroc Variation':
   st.title("Openings: Scandinavian Defense: Mieses-Kotroc Variation")
