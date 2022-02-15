@@ -86,76 +86,81 @@ if add_selectbox == 'Top 5 - titled':
   
 if add_selectbox == 'Top 5 - untitled':
   st.title('Top 5 openings untitled')
-  """
+  """ 
   Within our untitled player data base we found 478 different openings and variations. The 5 most common ones were the Scandinavian Defense Mieses Kotroc Variation, the Caro-Kann Defense, the Sicilian Defense Closed, the Indian Defense and the Horwitz Defense.
   The Scandinavian Defense Mieses Kotroc Variation was played 21 times (2%). The Caro-Kann Defense was played 21 times (2%). The Sicilian Defense Closed was played 19 times (1.8%). The Indian Defense was played 17 times (1.6%). The Horwitz Defense was played 14 times (1.4%).
-  So it seems that the two most popular openings for titled and untitled players are played almost as often, but there are small diferences in how often other 3 are choosen.
+  So it seems that the two most popular openings for titled and untitled players are played almost as often, but there are small differences in how often other 3 are chosen.
   
   In the graph below you can see the graph of all the average games of the top 5 openings of the untitled players. The graph is cut of at the 75th move since not all games are of the same length so this way the end of the graph which might be made up of 2 games is not visible.
   You can see more detailed graphs of the different opening on their own page.
+
   """  
   st.image(im_untitled_a)
-  """
-  As you can see unlike with the titled players the untitled players have an opening that moves away from the mean of 0 very quickly. This is the Scandinavian Defense Mieses Kotroc Variation. It almost instantly has an postive eval,
-  this seems to suggest that this opening is very favorable for white. The other lines seem to stay around the zero line until at least the 10th move. After this we can also see the Horwitz Defense go away from the zero line and join the Scandinavian Defense line in the positive.
-  We can also see that the Sililian Defence moves away from the zero line after about the 25th move, and becomes negative. Thus favoring the black player.
+  """ 
+  As you can see unlike with the titled players the untitled players have an opening that moves away from the mean of 0 very quickly. This is the Scandinavian Defense Mieses Kotroc Variation. It almost instantly has a positive eval,
+  this seems to suggest that this opening is very favourable for white. The other lines seem to stay around the zero line until at least the 10th move. After this we can also see the Horwitz Defense go away from the zero line and join the Scandinavian Defense line in the positive.
+  We can also see that the Sicilians Defence moves away from the zero line after about the 25th move and becomes negative. Thus, favouring the black player.
   
-  As you can see these lines are much less steady then the lines of the titled players. This could be because the titled players have a better insight into the game and can thus both control the opening so that neither has a bigger change at winning.
+  As you can see these lines are much less steady than the lines of the titled players. This could be because the titled players have a better insight into the game and can thus both control the opening so that neither has a bigger change at winning.
   But it could also be that we have more games to make up the average in titled players than the untitled players and that that is what makes the lines of the titled players smoother.
+
   """
   
 if add_selectbox == 'Indian Defense':
   st.title('Openings: Indian Defense')
-  """
+  """ 
   The Indian Defense is in the top 5 of untitled players and in the top 5 of titled players. We are first going to have a look at titled players, then at untitled players. 
   And then we end with a comparison of the 2 types of players.
-  The Indian Defense is played 128 times by titled players, and the longest indian defense game is a 160 moves.
+  The Indian Defense is played 128 times by titled players, and the longest Indian Defense game is 160 moves.
   
-  Below you can see all the 128 games of the Indian Defense by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
+  Below you can see all the 128 games of the Indian Defense by the titled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the titled players.
+
   """
   st.image(im_id_t)
-  """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
-  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  """  
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average Indian Defense game.
+  Therefore we will not analyse the end of this line but only up to around the 100th move.
   """
   st.image(im_id_t_a)
-  """
-  From the graph we can see that the average indian defense game played by titled players stays around the zero line for quite a long time. Although it does seem like the evals are slightly positive in the beginning, and thus favour the white player.
+  """  
+  From the graph we can see that the average Indian Defense game played by titled players stays around the zero line for quite a long time. Although it does seem like the evals are slightly positive in the beginning, and thus favour the white player.
   Somewhere between the 50th move and the 75th move we can however see that the average game starts to favour the black player.
 
-  Now we look at the untitled players. The Indian Defense is played 17 times by titled players, and the longest sicilian defense defense game is a 129 moves.
-  Below you can see all the 17 games of the Indian Defense by untitled players,but again these are still fare to many lines to analyse with our eyes. This is why we continue with the average of all the games of the untitled players.
+  Now we look at the untitled players. The Indian Defense is played 17 times by titled players, and the longest Sicilian Defense game is a 129 moves.
+  Below you can see all the 17 games of the Indian Defense by untitled players, but again these are still fare to many lines to analyse with our eyes. Therefore we continue with the average of all the games of the untitled players.
   """
   st.image(im_id_u)
   """
-  We of course still have the same probablem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyze them past the 50th move.
+  We of course still have the same problem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyse them past the 50th move.
   """
   st.image(im_id_u_a)
-  """
-  From the graph we can see that the average indian defense game played by untitled players stays around the zero line at the beginning with a slight trend downwards, thus favouring the black player.
+  """  
+  From the graph we can see that the average Indian Defense game played by untitled players stays around the zero line at the beginning with a slight trend downwards, thus favouring the black player.
   
   Now that we have looked at these lines individually we will now compare them. 
-  But before we look at the actual lines it seems intreseting to note that the longest titled player game went on for about 30 moves longer then the longest untitled player game, with respect to the indian defense.
+  But before we look at the actual lines it seems interesting to note that the longest titled player game went on for about 30 moves longer then the longest untitled player game, with respect to the Indian Defense.
   """
   st.image(im_id_vs)
-  """
-  As you can see the line of the titled players stays closer to the zero line whereas the untitled player line is slightly lower. This suggests that the indian defense has a slight advantage for the black player if you are not playing with a very advanced white player.
+  """  
+  As you can see the line of the titled players stays closer to the zero line whereas the untitled player line is slightly lower. This suggests that the Indian Defense has a slight advantage for the black player if you are not playing with a very advanced white player.
   Because if the white player is very good then this player can still make it so that nobody has a real advantage.
-  We can also see that the titled players games are much more steady then that of the untitled players.
+  We can also see that the titled players games are much steadier then that of the untitled players.
+
   """
   
 if add_selectbox == 'Modern Defense':
   st.title('Openings: Modern Defense')
   """
   The Modern Defense is only in the top 5 of titled players. Thus we are only going to look at the titled players. 
-  The Modern Defense is played 119 times by titled players, and the longest modern defense game is 228 moves.
+  The Modern Defense is played 119 times by titled players, and the longest Modern Defense game is 228 moves.
   
-  Below you can see all the 119 games of the Modern Defense by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
+  Below you can see all the 119 games of the Modern Defense by the titled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the titled players.
+
   """
   st.image(im_md_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 119 games, thus it is not telling us much about the average modern defense game.
-  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 119 games, thus it is not telling us much about the average Modern Defense game.
+  Therefore we will not analyse the end of this line but only up to around the 100th move.
   """
   st.image(im_md_t_a)
   """
@@ -166,13 +171,13 @@ if add_selectbox == "King's Indian Attack":
   st.title("Openings: King's Indian Attack")
   """
   The King's Indian Attack is only in the top 5 of titled players. Thus we are only going to look at the titled players. 
-  The King's Indian Attack is played 89 times by titled players, and the longest king's indian attack game is 205 moves.
+  The King's Indian Attack is played 89 times by titled players, and the longest King's Indian Attack game is 205 moves.
   
-  Below you can see all the 89 games of the King's Indian Attack by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
+  Below you can see all the 89 games of the King's Indian Attack by the titled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the titled players.
   """
   st.image(im_kia_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 89 games, thus it is not telling us much about the average king's indian attack game.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 89 games, thus it is not telling us much about the average King's Indian Attack game.
   Therefore we will not analyze the end of this line but only up to around the 100th move.
   """
   st.image(im_kia_t_a)
@@ -185,32 +190,32 @@ if add_selectbox == 'Sicilian Defense Closed':
   """
   The Sicilian Defense Closed is in the top 5 of untitled players and in the top 5 of titled players. We are first going to have a look at titled players, then at untitled players. 
   And then we end with a comparison of the 2 types of players.
-  The Sicilian Defense Closed is played 82 times by titled players, and the longest sicilian defense defense game is a 180 moves.
+  The Sicilian Defense Closed is played 82 times by titled players, and the longest Sicilian Defense game is a 180 moves.
   
-  Below you can see all the 82 games of the Sicilian Defense Closed by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
+  Below you can see all the 82 games of the Sicilian Defense Closed by the titled players, and whilst I think this looks very pretty it isn't exactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_sdc_t)
   """
   As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 82 games, thus it is not telling us much about the average Sicilian Defense Closed game.
-  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  Therefore we will not analyse the end of this line but only up to around the 100th move.
   """
   st.image(im_sdc_t_a)
   """
-  From the graph we can see that the average sicilian defense closed game played by titled players stays around the zero line for quite a long time. The graph is sligthly postive from the beginning and does not seem to start favouring the black player until after the 100th move.
+  From the graph we can see that the average Sicilian Defense closed game played by titled players stays around the zero line for quite a long time. The graph is slightly positive from the beginning and does not seem to start favouring the black player until after the 100th move.
 
-  Now we look at the untitled players. The Sicilian Defense Closed is played 19 times by titled players, and the longest sicilian defense defense game is a 114 moves.
+  Now we look at the untitled players. The Sicilian Defense Closed is played 19 times by titled players, and the longest Sicilian Defense game is a 114 moves.
   Below you can see all the 19 games of the Sicilian Defense Closed by untitled players, but again these are still fare to many lines to analyse with our eyes. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_sdc_u)
   """
-  We of course still have the same probablem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyze them past the 50th move.
+  We of course still have the same problem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyse them past the 50th move.
   """
   st.image(im_sdc_u_a)
   """
   From the graph we can see that the average Sicilian Defense Closed game played by untitled players stays around the zero line at the beginning with a slight trend downwards, thus favouring the black player.
   
   Now that we have looked at these lines individually we will now compare them. 
-  But before we look at the actual lines it seems intreseting to note that the longest titled player game went on for about 70 moves longer then the longest untitled player game, with respect to the Sicilian Defense Closed.
+  But before we look at the actual lines it seems interesting to note that the longest titled player game went on for about 70 moves longer then the longest untitled player game, with respect to the Sicilian Defense Closed.
   """
   st.image(im_sdc_vs)
   """
@@ -224,18 +229,18 @@ if add_selectbox == "Pirc Defense":
   st.title("Openings: Pirc Defense")
   """
   The Pirc Defense is only in the top 5 of titled players. Thus we are only going to look at the titled players. 
-  The Pirc Defense is played 78 times by titled players, and the longest pirc defense game is 197 moves.
+  The Pirc Defense is played 78 times by titled players, and the longest Pirc Defense game is 197 moves.
   
-  Below you can see all the 78 games of the Pirc Defense by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
+  Below you can see all the 78 games of the Pirc Defense by the titled players, and whilst I think this looks very pretty it isn't exactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_pd_t)
   """
-  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 78 games, thus it is not telling us much about the average pirc defense game.
-  Therefore we will not analyze the end of this line but only up to around the 75th move.
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 78 games, thus it is not telling us much about the average Pirc Defense game.
+  Therefore we will not analyse the end of this line but only up to around the 75th move.
   """
   st.image(im_pd_t_a)
   """
-  In the graph of the average titled pirc defense game you can see that white has the advantage for about 5 moves since the graph is positive, but that after this it starts to go down and into the negative around the 25th move.
+  In the graph of the average titled Pirc Defense game you can see that white has the advantage for about 5 moves since the graph is positive, but that after this it starts to go down and into the negative around the 25th move.
   """
   
 if add_selectbox == 'Scandinavian Defense Mieses Kotroc Variation':
@@ -244,16 +249,16 @@ if add_selectbox == 'Scandinavian Defense Mieses Kotroc Variation':
   The Scandinavian Defense: Mieses-Kotroc Variation is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
   The Scandinavian Defense: Mieses-Kotroc Variation is played - times by untitled players, and the longest Scandinavian Defense: Mieses-Kotroc Variation game is 144 moves.
   
-  Below you can see all the 21 games of the Scandinavian Defense Mieses Kotroc Variation by the untitled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the untitled players.
+  Below you can see all the 21 games of the Scandinavian Defense Mieses Kotroc Variation by the untitled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the untitled players.
   """
   st.image(im_sdm_u)
   """
   As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 21 games, thus it is not telling us much about the average Scandinavian Defense Mieses Kotroc Variation game.
-  Therefore we will not analyze the end of this line but only up to around the 50th move.
+  Therefore we will not analyse the end of this line but only up to around the 50th move.
   """
   st.image(im_sdm_u_a)
   """
-  The graph seems to have a positive trend and not really go below the zero line. This seems to suggest that this is a opening that really favors the white player.
+  The graph seems to have a positive trend and not really go below the zero line. This seems to suggest that this is a opening that really favours the white player.
   """
 
 if add_selectbox == 'Caro-Kann Defense':
@@ -262,16 +267,16 @@ if add_selectbox == 'Caro-Kann Defense':
   The Caro-Kann Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
   The Caro-Kann Defense is played 21 times by untitled players, and the longest Caro-Kann Defense game is 124 moves.
   
-  Below you can see all the 21 games of the Caro-Kann Defense by the untitled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the untitled players.
+  Below you can see all the 21 games of the Caro-Kann Defense by the untitled players, and whilst I think this looks very pretty it isn't exactly readable. Therefore we continue with the average of all the games of the untitled players.
   """
   st.image(im_ckd_u)
   """
   As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 21 games, thus it is not telling us much about the average Caro-Kann Defense game.
-  Therefore we will not analyze the end of this line but only up to around the 50th move.
+  Therefore we will not analyse the end of this line but only up to around the 50th move.
   """  
   st.image(im_ckd_u_a)
   """
-  The graph seems to have a negative trend and not really go above the zero line. This seems to suggest that this is a opening that really favors the black player.
+  The graph seems to have a negative trend and not really go above the zero line. This seems to suggest that this is a opening that really favours the black player.
   """
   
 if add_selectbox == 'Horwitz Defense':
@@ -279,17 +284,17 @@ if add_selectbox == 'Horwitz Defense':
   """
   The Horwitz Defense is only in the top 5 of untitled players. Thus we are only going to look at the untitled players. 
   The Horwitz Defense is played 14 times by untitled players, and the longest Horwitz Defense game is 127 moves.
-  
-  Below you can see all the 14 games of the Caro-Kann Defense by the untitled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the untitled players.
+
+  Below you can see all the 14 games of the Caro-Kann Defense by the untitled players, and whilst I think this looks very pretty it isn't exactly readable. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_hd_u)
   """
   As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 14 games, thus it is not telling us much about the average Horwitz Defense game.
-  Therefore we will not analyze the end of this line but only up to around the 50th move.
+  Therefore we will not analyse the end of this line but only up to around the 50th move.
   """  
   st.image(im_hd_u_a)  
   """
-  The graph of the average Horwitz Defense seems to stay around the zero line for the first 25 moves, and therefore does not really favor any particular player. 
-  After the 25th move the line does go down into the negative, and thus it seems to favor the black player.
+  The graph of the average Horwitz Defense seems to stay around the zero line for the first 25 moves, and therefore does not really favour any particular player. 
+  After the 25th move the line does go down into the negative, and thus it seems to favour the black player.
   """
   
