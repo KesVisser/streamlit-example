@@ -123,7 +123,7 @@ if add_selectbox == 'Indian Defense':
   """
   st.image(im_id_u)
   """
-  We ofcourse still have the same probablem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyze them past the 50th move.
+  We of course still have the same probablem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyze them past the 50th move.
   """
   st.image(im_id_u_a)
   """
@@ -133,7 +133,6 @@ if add_selectbox == 'Indian Defense':
   But before we look at the actual lines it seems intreseting to note that the longest titled player game went on for about 30 moves longer then the longest untitled player game, with respect to the indian defense.
   """
   st.image(im_id_vs)
-  
   """
   As you can see the line of the titled players stays closer to the zero line whereas the untitled player line is slightly lower. This suggests that the indian defense has a slight advantage for the black player if you are not playing with a very advanced white player.
   Because if the white player is very good then this player can still make it so that nobody has a real advantage.
@@ -145,18 +144,36 @@ if add_selectbox == 'Modern Defense':
   """
   The Modern Defense is only in the top 5 of titled players. Thus we are only going to look at the titled players. 
   The Modern Defense is played 119 times by titled players, and the longest modern defense game is 228 moves.
+  
+  Below you can see all the 119 games of the Modern Defense by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_md_t)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  """
   st.image(im_md_t_a)
+  """
+  The Modern Defense seems to favour the white player a little bit, since the line is just above the zero line for quite a number of moves. We can also see that at the first or second move the line goes up quite a bit for so early in the game.
+  """
 
 if add_selectbox == "King's Indian Attack":
   st.title("Openings: King's Indian Attack")
   """
   The King's Indian Attack is only in the top 5 of titled players. Thus we are only going to look at the titled players. 
   The King's Indian Attack is played 89 times by titled players, and the longest king's indian attack game is 205 moves.
+  
+  Below you can see all the 89 games of the King's Indian Attack by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_kia_t)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  """
   st.image(im_kia_t_a)
+  """
+  We can see in the graph that the King's Indian Attack is slightly positive for the first 50 moves and then seems to become negative. It thus favours the white player and then the black player.
+  """
   
 if add_selectbox == 'Sicilian Defense Closed':
   st.title('Openings: Sicilian Defense Closed')
@@ -164,18 +181,39 @@ if add_selectbox == 'Sicilian Defense Closed':
   The Sicilian Defense Closed is in the top 5 of untitled players and in the top 5 of titled players. We are first going to have a look at titled players, then at untitled players. 
   And then we end with a comparison of the 2 types of players.
   The Sicilian Defense Closed is played 82 times by titled players, and the longest sicilian defense defense game is a 180 moves.
+  
+  Below you can see all the 82 games of the Sicilian Defense Closed by the titled players, and whilest I think this looks very pretty it isn't excactly readable. This is why we continue with the average of all the games of the titled players.
   """
   st.image(im_sdc_t)
+  """
+  As you might have noticed not all the games are as long as the other. This means that nearing the end of the average line it might be made from 2 of the 128 games, thus it is not telling us much about the average indian defense game.
+  Therefore we will not analyze the end of this line but only up to around the 100th move.
+  """
   st.image(im_sdc_t_a)
   """
+  From the graph we can see that the average sicilian defense closed game played by titled players stays around the zero line for quite a long time. The graph is sligthly postive from the beginning and does not seem to start favouring the black player until after the 100th move.
+
   Now we look at the untitled players. The Sicilian Defense Closed is played 19 times by titled players, and the longest sicilian defense defense game is a 114 moves.
+  Below you can see all the 19 games of the Sicilian Defense Closed by untitled players, but again these are still fare to many lines to analyse with our eyes. This is why we continue with the average of all the games of the untitled players.
   """
   st.image(im_sdc_u)
+  """
+  We of course still have the same probablem with the average line as we did with the untitled player. It however does seem that the games are a lot shorter so we shall not analyze them past the 50th move.
+  """
   st.image(im_sdc_u_a)
   """
-  And now we shall compare the two types of players
+  From the graph we can see that the average Sicilian Defense Closed game played by untitled players stays around the zero line at the beginning with a slight trend downwards, thus favouring the black player.
+  
+  Now that we have looked at these lines individually we will now compare them. 
+  But before we look at the actual lines it seems intreseting to note that the longest titled player game went on for about 70 moves longer then the longest untitled player game, with respect to the Sicilian Defense Closed.
   """
   st.image(im_sdc_vs)
+  """
+  As you can see the line of the titled players stays closer to the zero line with a slight trend upwards whereas the untitled player line is less stable and lower. 
+  This suggests that the Sicilian Defense Closed has a slight advantage for the black player if you are not playing with a very advanced white player.
+  Because if the white player is very good then this player can still make it so that nobody has a real advantage.
+  We can also see that the two lines are the exact same for about 5 moves, which probably means that on average the titled player and the untitled player play the exact same moves.
+  """
 
 if add_selectbox == "Pirc Defense":
   st.title("Openings: Pirc Defense")
