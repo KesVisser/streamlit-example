@@ -76,12 +76,12 @@ if add_selectbox == 'Top 5 - titled':
   You can see more detailed graphs of the different opening on their own page.
   """  
   st.image(im_titled_a)
-  """
-  As you can see all the lines stay very close to the mean of 0 at the beginning. Except around the 5th move wher both the pirc defense and the modern defense make a small and short jump into the positive.
-  This suggests that the white players has an opertunity there, but almost always loses it.
-  All the lines stay very close to 0 at the beginning but seem to all be positive untill around the 22th move when the pirc defense goes deeply into the negative. This seems to suggest that all the favorite openings sligetly favor white a little bit.
-  Which makes sence since white plays the first move and therefore naturally has a small advantage.
-  It also seems to me that the green line, thus the Indian defense stays closed to the mean, this might suggest that it allows for a very equal setting that continuos for the rest of the game and might explain why it is the all time favorite.
+  """ 
+  As you can see all the lines stay very close to the mean of 0 at the beginning. Except around the 5th move where both the Pirc Defense and the modern Defense make a small and short jump into the positive.
+  This suggests that the white players has an opportunity there, but almost always loses it.
+  All the lines stay very close to 0 at the beginning but seem to all be positive until around the 22th move when the Pirc Defense goes deeply into the negative. This seems to suggest that all the favourite openings slightly favour white a little bit.
+  Which makes sense since white plays the first move and therefore naturally has a small advantage.
+  It also seems to me that the green line, thus the Indian Defense stays closed to the mean, this might suggest that it allows for a very equal setting that continuous for the rest of the game and might explain why it is the all time favourite.
   """
   
 if add_selectbox == 'Top 5 - untitled':
