@@ -5,7 +5,7 @@ import streamlit as st
 from PIL import Image
 
 """
-This project is based on the work of Kamiliah, Pawel and Kes, and writen by Kes.
+This article is based on the work of Kami, Pawel and Kes, and writen by Kes.
 
 """
 st.sidebar.write('Menu')
